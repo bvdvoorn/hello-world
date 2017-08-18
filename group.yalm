@@ -1,0 +1,67 @@
+default_view:
+  view: true
+  icon: mdi:home
+  entities:
+  - group.living
+  - group.zonnescherm
+  - group.light_living
+  - group.climate
+  - group.energy
+  - group.people
+  name: default_view
+living:
+  name: Living
+  entities:
+  - media_player.woonkamer
+  - media_player.eetkamer
+  - media_player.sony_radio
+  - media_player.kodi
+bedroom:
+  name: Bedroom
+  icon: mdi:account-multiple
+  view: true
+  entities:
+  - media_player.slaapkamer
+  - media_player.samsung_tv_remote
+  - media_player.tv_bedroom
+light_living:
+  name: Lights Livingroom
+  view: false
+  entities:
+#  - switch.switch_eetkamer
+  - light.lamp_eetkamer
+#  - switch.switch_woonkamer
+  - light.lamp_woonkamer
+  - switch.switch_no_3
+#  - light.lamp_no_3
+  - switch.switch_no_4
+#  - light.lamp_no_4
+zonnescherm:
+  name: Zonnescherm
+  view: false
+  entities:
+  - cover.zonnescherm_1_level
+  - cover.zonnescherm_2_level
+climate:
+  name: Climate
+  view: false
+  entities:
+  - sensor.woonkamer_sensor_temperature
+  - sensor.woonkamer_sensor_luminance
+  - sensor.woonkamer_sensor_relative_humidity
+energy:
+  name: Energy
+  view: false
+  entities:
+  - sensor.power_tariff
+  - sensor.power_consumption
+  - sensor.power_production
+  - sensor.hourly_gas_consumption
+weather_overview:
+  name: Weather overview
+  view: false
+  entities:
+  - sensor.pws_weather_1d_metric
+  - sensor.pws_temp_high_record_c
+  - sensor.pws_temp_high_1d_c
+  - sensor.pws_temp_c
